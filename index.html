@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orange Blue Mobile Shop</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f6ff;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #ff7a18, #1e90ff);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Container */
+        .container {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* Mobile Card */
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+        }
+
+        .card h3 {
+            color: #1e90ff;
+        }
+
+        .price {
+            color: #ff7a18;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .btn {
+            background-color: #1e90ff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #ff7a18;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Smart Mobile Shop</h1>
+    <p>Latest Mobiles • Best Prices</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/mobile/t/0/g/-original-imah4zp7fvqp8wev.jpeg?q=90" alt="Samsung Mobile">
+        <h3>Samsung Galaxy S23</h3>
+        <p>8GB RAM | 128GB Storage</p>
+        <p class="price">₹65,000</p>
+        <button class="btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAgQVi2Iyctb8rJG2vkQ5ERNC78mqkReWqsw&s" alt="iPhone">
+        <h3>iPhone 14</h3>
+        <p>6GB RAM | 128GB Storage</p>
+        <p class="price">₹72,000</p>
+        <button class="btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTExIVFRUXGRUYGBcYGBYXFhcWFxoYGBUXGBcYHiggGBolHRcYITEhJSkrLi4uGB8zODMtNygtLisBCgoKDg0OFw8QFy0dHR0tMC0tLi0rLS0tLS0rNS0tKystKy0rLS8tLS0tLS0tLS0tKy0tKy0tLS0tKystLSstLf/AABEIALEBHAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAACAAEDBAUGBwj/xABAEAABAgMFBgMGAwYHAQEBAAABABECITEDBEFRYRJxgaGx8AWRwQYTIjLR4RRy8QcjM1KCwhVCU2KSk7LSc2P/xAAaAQEBAQEBAQEAAAAAAAAAAAAAAQIEAwUG/8QAJxEBAAICAQMEAQUBAAAAAAAAAAECAxExBCEyEhNBUWEFInGBkRT/2gAMAwEAAhEDEQA/AO8ltM0+LUYUrl5aKGIOHEL0rIAecsfPc9e6X+CKRIG8v179LRDEgxEvPNmp1pkTo3lW0W4dOXDfFOrxo2y5qZb+gOj8sQh922bDR+lcm0GYTx1+UTccMPUb94RSm08GnvfzI1pmFXkRLcsi4iwfOlNNEcMYGmOlDjmx6tQIYotkkOaVeWZ6vx3MwjOJdnybTi+G/RQDHGA5YEZsKdhzoDopBETkK1bDdr0TEhgSGFHkGx73bkvdznSZB3AiophulkgCG1zeVZHyGra4eb7bk0beRPDvdki2XLyagM5BhRqd5BIwggAUYcak0pMU+yAXBYwtN86EOz9sHUkE2cMfN8pDHvJNZ2c2en0PzZHvJTQ2Yr+j0lxby1QPEIZznlN6jDHvNK0rMSesmZsJPp5I4sHEpzwZt3riOHA+M/tEhj27K6B2Le+iA2ZVNnDjvOspqxEzOoZmYiNy7oscHYDfx7xKaEzEjWnxbxIDvivG777SRw/xbxakl5COLjIFhXmqg9r/AP8AteP+UX/0vT2vy8/d38PcIoCaZakPV9e80tlnoZ1w0wlUeS8YuXtF707MN4tdqbAxxgmrtNia81eF9tv9a1/7I/qkYd/KTm1zD1+E1/TCSa0gfN/Pv7FeQ/jrb/Wtf+yP6pjfbb/Wtf8Asj+qvsz9p78fT2CAtR3c5HhVRzwnMDDJz5SXkX422/17X/sj+qmuniF4EQIvFs//AOkZroSynsz9nvx9PWoCS864kaffrolHDUsx3NMOSeRWT4BfrSOBrUfEwIiAAEYkH0idgWlQ6DWEEt8znRh15rzmNS9YncbgjDkAXM5ABqF56DklZ4YBi8p8QOKVlFSnLMc0zAEyeVWn58v1RRADDymCaCnDogbQ6j04hOW2ssO+aUWYBq5mzdy5Ig9kmonh+nFEYRNwQMm8mTAE0oWcONRgKM/VL309PtwbvNAJEhUl6S6EhpdVLBEx+WZYavSXkyGAhixbrI0buqCKIAgvm9TnjjiqJHBmc8Ww4zxShNWDCWHnhryTQxs+uJq2Mzo6UcRc6AHDi03+qAtmWOk50mevmni3R/0szV80oYRNsBzIlP1RRXeCKZE99NJIjyyxv7TL4ZnWq3rj4vJiXhw3en3K4v8AENIHXvmrF0vLUlOmmI3Lgjcd4fuMmKuSPTaNw9FsLaEsxcHCp6TpxO+Uu3NpMMBwlITl6Lj7rfiMddy3Ln4sKRVlPuoXvXN8S+H1P6Xav7sXf8NMuXcmTvg9JZ4vxOiUbFg5z548u2Ti02hIhi+Iqe8sTojffqx77G5ez5ExMTqexCEgMZs2BnQdtpkHEQiTvzAwxBGPcgpAJlgTVq4SYEHuWiAVZqvOY4Sb9DuRBEScEcXxxl3XRNBZgHSR9AGFKczonijlxeuI3690Q7LGT48mYy3ctyA4IXLvRsJzk0qGXclJBAZGfF5bsM+WiihiybWRkQ/qOSlhiIm5qJNLv6bkHO/tIvsVh4dbRQxF4hDZjQRkQxs1PhdeOezvyf1Rei9I/bRbbNys4NqcVqHEv8kMXqR57l5z7Mj92PzRei9cXLyzeJ79YWVtZ2REUUNubOBodmzFnGYjtOYzGDDETFEXILyCzLz4XHZwwGP4TGYhsmRgEJhBMYMwPjBDAuJqS/3aKL3WyDEfc2MgP9oVceH2wDe7jbLDyWp7/DMTr5aXhfgltDb2JigiEPvbEbQnBEIooC8MY+GIGGIFwZgrr44Jlcl7NRW9lebCDatLOGO2sRFCIooRGDaQgggFohvXa2sMyvSnDxy8wqGBDsqxspjCtMINlSXaH4gi2Ed2h+IIj1S52I9xdmFYLV/OAnop4pZ58s21OKGylYXbSCPrClGeAfL0wH0K5LcuynjCKCPXgXrQGejeSOGEVo3GT58kMO0DMOJ5g1cbhRDGQZvJnylJ+9VGkohDjGlMa66KSmyOtanXegsnrm2D9zCA2rzm0pjXB/pgEEkVsAZmjOZZYtxR7TToZ1asiGCijEgx0xnn0dTQl9ePeZVDAM4LPw4lPDCGBGsiJzw0qyaCEzcu1KYVqNyeIvi09MJNSiIUcJcmc2yzZSPInQY54APiozM4s7cQ0248kdmS7OGf7TQSM9A1AHo7/qmcY9TPWSIjOeIOeQbgFFFaswETSozoPC7EE7hMywVqyI2jiJjJBDA0L97vJQQxxPVzj0XC/eNW7kiRnVt0nVz34MnOYm6pgbIDzDTwKB/qDjqsq1/DvGI4DskscDmKcVuWHtBZH5pGWFWwPPiuHtbGKJncEdurd0uTg/MNauVqtprw5c/SYs3nH9/L0a728MQ2oWML4SE2fANl5UkpNlhg9ZEzJM8Kbs5UC4Hw63toLSEWblyPhMwZ0bQ44Ou9hhqWFKuxbz39gLppf1Q/O9b0n/PaIidxP+hhidwZvN/rLdLeneTNLhjn3giIMnocZPNnBl+j6BNPywpXFi7fY5T24jwBqznocZ45BGIROrvrvIbeeYyQCrNM7nk3fDRSQwl3+gG8cvPeg8r/AG4Xr47vZgu0McZH5jDC5/4Fcl7L/IPzRei0P2uXnbv8cL/w4bOCW7aP/pUPZb5P6ovRe2LmHlm8Zalws7M2dj7yOKzBsrOYDuRY/BC7uHiEI4njHd22PjtMQCQCWmKkmQIniQ7SwksbN7GxG1CHsrKRqR7sGUiMq50OD3KzMYAMcEG0RCNuTOQC4hDCpIJYEA4hj6w57fP8pPBrEG3swYn2bexYOYiwtITDE5dpSIdbVsJlVbv4d7i92Vn72ztQLWw+KAwmscOTdOquWomVqveGbIWSZGyIQqsojCjusPxBSGBPdYfjCg9SMP7m7flj0/lUUIffOjbz05BWtj9zd/yRf2qCCDjXjhTz89Fy25dlPGAAg1EvuhcdcJGnfYRQQyABnwD6VZnPkE8QrJ5S0zpu6LLQjZvjlLvfzQNTe890p9800BBLkZzfWfLqUVlDDhMcHYzNN3LVUO0JOFQw7CMQtFw76AIWG0xZt+EsOOuCkgIctuy6VRBGkyc5yLsPt5FNtUZieDxHJBFF+gAen2PJPAADiAJ5AYd8UBxwzDyrngwShJIlSZBn9d6UVoDRnnTXJF7t2cYjWmuNcUDQAE00npjSlEFq2QPn5KSBqnXDNh6o2hzI3P6IPEoDswhwS+jtUK34Z4dFGRk4J74LSu1whIYwu3f0Vi2v9lYQPEcyIRUnIBcHL9za8VjZ4LjDtDF8/XRkcdyhDYMuYvftPaxxfBALMOGMTkl9zB9Jq9cvC71eWMe1BAaGN4RLKzfaJfPZ3rcY5lyZOtpTvMpb5frGEj4hFoJ/pRXPDbpeLeJ4bM2dnNooxOuENS/l0W54P4BY2E4QIov5ogHDZAShniA7Y0WttFzPDV9W490XrXDEcvl5/wBWvbtjjSldvC4LJyDtRfzxV1FJCVBR8WV+QBAas9w0zkfLzaNqgym9XAofUfoiERxLGgpJuWHPQr1iIjh8u97Xn1WnchYByWEsGb4XB3U5aIoYS77U3ozY6p5s3OVdHphJEI6SbjD6qsnc+eu7DugTnRpnE95JAg88Orce2Vbxa3FjY2tr/LBHHNqwwmLflioPnv2xvfvb5b2h/wA1pH5AsOQV/wBlB8H9UXoubvMTl10vsmP3f9UXovfH5PLN4yu3O3gIFjbfDFZwwwByziH4YIoTkYQFPa+6EoSCDVyJnM8lpxWEMQG1DDFvAPVD+Bsv9Kz/AOEP0Xv6XJM7VvBbaCC8WZgAj2Y4IiCSZQERExEFwA0p1Za1oXJKisoBCGhAhGQAA8gjSI0WnZIgUKIKoJ0d0HxhRhTXP5woj1WMfubD8p/tVWIfE0gRPdMj6eauRw/uLH8p5sqcRP8AK50Oq5Lcu6njABABvqK4YzOnJFCQ5D7sG7yRVPZd8580wE5uBznNRQwQgYU06d9U0BcuX3zGM0gwrXXZbWnFHDics6k4TfN+aBWYo7cQfqms2JDA5aD9Ajs6AsUtovI86+aIRgc5Nhp56jzUllFJjiQHrmeHnmkIwAdoz858KVQRF5Y4T+8kEsIy60xnl90WxvzkWnI9ErEACbPIYbzPihiNcMZckD2hyIafkP1SL/y9fuiiEt7dXxUZlUF9wKDyGLxm2tNr3VnEQGAEDxRROJQgmUIlM4ZqC6ex1+vMW3eY4LvCSPhhG3aMXYOXhBlV+C9AuHhsFlAIIJQgOzCZapxJ++iuxQyBFZ/aj69yPnSkVd/U9ZfLbtOoY3gXszd7sHggeOY95G8doTKTn5R+VhLetrTQZ1kMd4PHVCIfM4DZ34nXuaOCtZNUZ+W9bcezNMsezPAjvglsakS7cDWX6JxvedXrN+o5aJ4YYZMGDtOoM88pIGhJAlEc9Nw3fRPZxb/1owBp9kp5iWDSx0GLHhqnPzVhnzrlx5oprSMAioMps4o+dGPXRHAZYv2JHChTwgicjxy5YdMkYJ+tXwGHdEAhicH3eWnei5f9pl+FlcLQCKdoYYBShO0RIZCLsrqoBiJefD1XmX7aL/OxsAZjatIt5+GE10i7CRyPJrQzXU+yf8P+qL0XKxLqvZL+Hxi9F74/J45fGXWQURJoBJOy6HGQRBMEQQJOkE7KBwprn84UQU9zHxBSR6naWn7ixhzD+TfVV4oA/eWGVVJaH93d/wAlp/aorSr6Z8+i5bcu6njAYq1bPLAeSCymX6YU80c3JHrL6pgGhmw4nCWSy0Qj+EPUYtUnt0cQoMHEtHx4eqjhcgBjIvk+GNKjyRAucvLMN0RCDUIMsa4fdSmMFy5ngH3n0Qs4LdkSw7kpBCzDNzXqEACzZqSFJV3s6IRh5APr6y3pbGgOM5z9EdnqPKv2RDgnjJmz0TxEkDJ85lmyUdtbwwmZGONAs29eP2NmD8Q3T4oNUn64jp5KOIE09T0K5K8+2YAaATBxrosi09sbQmUQA4fRXUjqoo5kYhmnPGbeuh0Ql5gjLCbSnMctNJNFG8zLXCsxKlPMFTQxTxIyc/p3qo2F/uK727x1UsMVRItw0x49UxBlIP8AQyeVWdDZw0FGGpGM+92KAhB1GhwxHTdqiYESFfvPr2UJgNGwxGm6deqYxUHwiffNvNAQ385bnPHyTxw+ve+nJDDFX9dJPglDC0TbUW7JpevVAeLP0Ljfn91I4q1Z4Nlx7yTCNq4tMjh50PknsaMNP06qKeGdGabfVeDftI8Q99frYuGgPuw3+yR5v5r3DxO+CwsLW1f5IYoqYgOBxPVfNd+tjFEYjMkkneS5VqSqFdb7Ifw+MXVciV2HseP3fGJe2PyeGXxdXBROlDRJdDkOnQhHCgcBEAkEYCKYBWLnD8QUYCsXMfEFJHolofgu/wCS06wJ9mhcIbT5bt+S162alPPhhRcluXbTxR7Ix6d4poRkWy1m4RnufBRxWgAyae6ay0aITmRgXq/bp4A2PDPMV0WVffaKws32ogTOh5LBv/tzCJWcOZDyTSO2tIWZzmeNXVW8eJ2UBL2kL5P3qvML/wC1dvGfmINNnCqxbxfoi7msneff0WvSj03xD2ysoH2Z+Yz5/Rc5ffbK0idomrl2VxRvOOI1Ucd57+jq+kdBefG7SKsZfJ/vvVG1vpeZPmFmR3jtlX9/P0TQ1bS8DUmWIVaO8sfqHVKK216IDbHslVHumowbhp5IodkiY5THcuwghffQ4g5vJsu2UkBxaTyGr5GXSiw2KGBpy8iadJPL6pRH0DyxbLemIhb5Xm76UxxShfEYUd27dlAxLj1rq7CtOqYSeXnrLLuaPafLucuPROzl30x7p58EUO13LfjT7J7OI4EbnwfvmnarMGqdz+akghxrLCiByT67q+rnyRw67xp2/JPtZtjw3cSnYS088lBxH7WvFPd3WGxc7VrFmfkgYl+OyvErUrsf2keL/iL3Gx+Cz/dw/wBNT5vyXGxrcQSiXYexv8PjEuPK7P2LH7v+qLqvXH5PDL4urhCTIoUmXQ5QMiATsnAUU8IUkIQwhSgIHhCs3MfEFXAVm6H4gpI72KL4bt+S162ap+JeNWViDtWg3Ah1g/tC8TisbpdIoItkmK0EqsznovLLfxGKJ3Jcz9HnuC5rV3LspP7Xo/iPt4JizgymeUsPuuW8Q9pLW0d4ixplyXM/iCZqOO08uCRWGttG1vtXPeKgjvGvJU/e8O8lAbfVVF73svmQRW7Y88OAVA2wUZt02i/HeG7Kh99NZ8VqtDwS9wQxvEJicB/3Bed7emszrbdK+q0Q0rp4Lb2jRCEwj/dLr6LSsfZWI/PawQ/l+I+klFD4zFEQ5+27VWYfEZVPfp9V8nJ1PUfGofTp0mL57rV39nLtB80UcZ3gUrL0WgLvdWD2EJahrLBYpvroTeDgTz9FzTkzzO5s94w447RD06xtBOpxdzXvqp3BHXtqrKsLYYz0bgce3VyC2wO4Z9z5L774q2WeRIc0wfUb+iOyiJbzx4KCzIfHSuOtcvNTCIjLudQgNhThi+gxfBCJzLDOmbYcE0etNzd1KW3l5ZmbvqoJbKR1RH7Y09cFDBbTmfopYYwXn2e+SKks4jlPcNFz/tt42LrdY4gWtI3ggGO1EJxUwE962rS2hghMUUTCEOSZACpJdeH+3XtN+Mt3hJ91B8MAOWMRGZ+iRA5i2jcqsVJaxKN1tAldp7Ffwv6ouq4srtPYr+F/VEvTH5PLL4ushCdkhEoLa+ww1IXQ5FhklhXr2jghpNYl99poz8sgszMQ3FJl20d4hhqQFn3r2gsocXXB3jxOOOsRVSK1JWJu3GL7dwfamElgD1xGCy7T2ntTFIsufucfxV7ko4gx8j5hx1U9Ut+3DtPH/G47xYXcRRfKbT+1YEVoVDaWv7uDfF/aojbLFuW6cLRtlHaW6qR24UEdss7aW7S8aqubZQGNM6gnNqhMaidJ0BGJNtIXTINK5X9pRea0/wAay5pTWd4I3LnyYIt3h1Yuomsal0VlfFNBe2WTdLQRhnmKa5o9pc1sOpddc23r9mKcFcsonMtMisS63qX3V6xvnDDzX0Hy2tBCXxx+6tQxHvGqyrO84+WMnmVasbUv6STQuiI5dN78hzUN4vWyC4LcNyKG17H671R8UvAYihkpoUb97W2dlWztS38oh5fEuevf7UYIX2btak/7tkcwSivkD1WLfPD4Yqw8k0umH7S+3F5vnwx/BZj/ACQ0P5jWLouaivGhXS3vwZsFk23hxGCqd2YbVN7xT2l2ZB7lU0i210vs74rDZWTGrkrnvdo7OS1WdSzau406a9e0UZkJLIt79FFUlVYDNS32yEMTB6YtmclubTLMUiEUUZQkpJllokkkkFi5fNJBb/Nwh/8AIT3WAkliRJ5bwmt4GiZ3kJ8EB3iM+7hb+aLoFTMcSv2cG1CBrF/ahiu+iluUrwzzGUnKtR2CA2Sy0gmnmpvdpCzQQzTsVNsJbCCFilslT+7T+7RdK+yn2VP7tP7tDSCAEFwr8N9cfFC5zo6r+6S92pMRKxMxw9TBMuxyU9nbUmzKnCXw09VKIt/k1EGlYXjA4K3ZXsOAscRt9uiKG1lr+qK3xfGlI/VZl+vu1Lmqn4o8NTLvvdWtLZjh3NA9pGO8lBHDNx9k8UWldUG0Dru4IqC0s8w3e9ULzcwRRaZb9X3uo4rMEYN+qDmr1ctOKzo7touvtbuMlnXy4tMKaWHORXfRVLWFoiFuR2bFZF/DWh4dFa8paOyOyqGq+T8sVb8U+cUppmcpaKnZxmEuK+aO2tjGXiruA6L0eYEkydAkkySCSyAm7tpvFU1oA8naVe6IYY2SijJLlQafhELkD839ivx3UZcVS9n4XjI/2xdYFu+6bBLclY7MuK6KKK5rZ93v4IYrETkstaYMV10dN+GORWxHYhBFYaLK6ZP4dP8Ah1pRWenoiFnogzDdk4u60vdJGz1TYzBYIvw4Wj7pCLJNih+HS9yr3u0Jsxj6ojq4Yj09G70UwM9edfsyq+9Afjuwp36I7M4ghuGq0LAHCmPc5dU21nwnPr2yhhjz3ZDzwQQ2hrul05IJ4rQc6ILSOpOGqitLQjFpYGm5Rm2YsThTyyHbKKmitMu96YxMMPNs+CgFszS4Zc0MMZM25zdBKYwOPr1TE91r2VFFa5lDHHqHOPkVTab3jY+aHbwPSpwqoYiSXGsnxkhc1khtBfbsDOHyznNct4qPjfQb3C7ARvruPpxVa+XOC1lEH5EcappJncONTroI/AoKgxNwUX+BQ/zRcvotMsR0ls/4PB/NG/D6Jf4LDnFyQYzpOtj/AAWHOLkhHgw/mPL6IMl0zrX/AMGH80XJFB4GMymwfs1DOKJpAEf8mJ8tnmt8AcO8FTut3hs2hZu/urRIbEcuKzKwIMe+8uaE9e9URIbDigEU277ZRsMQZDs/o6O2gbUZa99VHPuXf6IAiAaqjMakjGCjiDKADG6A2iaKEhRxFA8ce9CbVRRb1HEXREhtihNsoSc1Gd6I7sfKNw6lPYfMePokktADUd4FDjwHokkgUf8Al3w+iiHzpJIFY9+cKlj+Ub0kkFSx/wDr1QW9f6kkkFqL5vL/ANFN9kklRHFVRQ+o9EkkQY75quPX6JJKgovX6JQ/NwPqmSRAw1PDqht8eH/pJJRQ2dOI9Udn/l3HqUkkEmJRH09UklFF9vVOKHvJJJRQnvmnsfl8ugSSQhBFXj6FQ2/zHfEkkosobf69FXte+aSSJKE1SiSSREEWCjtKpJKkv//Z" alt="Redmi">
+        <h3>Redmi Note 12</h3>
+        <p>6GB RAM | 128GB Storage</p>
+        <p class="price">₹18,000</p>
+        <button class="btn">Buy Now</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Smart Mobile Shop | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
